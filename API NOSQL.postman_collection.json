@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "cfeebfed-e738-45e8-bead-4cc226d76f0f",
+		"name": "API NOSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24741377"
+	},
+	"item": [
+		{
+			"name": "Personas",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/person/63935d76b99ae6331819d539",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"person",
+								"63935d76b99ae6331819d539"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/person/63935d97b99ae6331819d53a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"person",
+								"63935d97b99ae6331819d53a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\":\"CC\",\r\n    \"documento\":\"15142\",\r\n    \"nombreCompleto\":\"Jonathan Jaramillo\",\r\n    \"correo\":\"jonathan24365@gmail.com\",\r\n    \"celular\":\"3016381119\",\r\n    \"direccion\":\"Dg 60BIS sur # 75H-51\",\r\n    \"estado\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/security/person",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\":\"TI\",\r\n    \"documento\":\"15142\",\r\n    \"nombreCompleto\":\"Steven Cruz\",\r\n    \"correo\":\"steven79@gmail.com\",\r\n    \"celular\":\"301638\",\r\n    \"direccion\":\"Dg 60BIS\",\r\n    \"estado\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/security/person/63935ea3b99ae6331819d53b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"person",
+								"63935ea3b99ae6331819d53b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/role/63936bb3b99ae6331819d53d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"role",
+								"63936bb3b99ae6331819d53d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/role/63936bb3b99ae6331819d53d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"role",
+								"63936bb3b99ae6331819d53d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Gerente\",\r\n    \"estado\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/security/role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Administrador\",\r\n    \"estado\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/security/role/63936bb3b99ae6331819d53d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"role",
+								"63936bb3b99ae6331819d53d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/user/63936bb3b99ae6331819d53d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"user",
+								"63936bb3b99ae6331819d53d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/security/role/63936bb3b99ae6331819d53d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"role",
+								"63936bb3b99ae6331819d53d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\":\"jonathan6253\",\r\n    \"contrasenia\":\"jara1512\",\r\n    \"personaId\":{\r\n        \"id\":\"63935d76b99ae6331819d539\"\r\n    },\r\n    \"rolId\":{\r\n        \"id\":\"63936dbbb99ae6331819d53f\"\r\n    },\r\n    \"estado\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/security/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\":\"TI\",\r\n    \"documento\":\"15142\",\r\n    \"nombreCompleto\":\"Steven Cruz\",\r\n    \"correo\":\"steven79@gmail.com\",\r\n    \"celular\":\"301638\",\r\n    \"direccion\":\"Dg 60BIS\",\r\n    \"estado\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/security/user/63935ea3b99ae6331819d53b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"security",
+								"user",
+								"63935ea3b99ae6331819d53b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
